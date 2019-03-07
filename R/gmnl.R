@@ -608,7 +608,7 @@ gmnl <- function(formula, data, subset, weights, na.action,
   prob.alt <- attr(again, 'prob.alt')
   prob.ind <- attr(again, 'prob.ind')
   residuals <- Reduce("cbind", yl) - prob.alt
-  colnames(prob.alt) <- colnames(residuals) <- levels(alt)
+  #colnames(prob.alt) <- colnames(residuals) <- levels(alt)
   
   ###########################
   # 7) Put results in form
